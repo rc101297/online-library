@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>App Building Static 2</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home"
+          ><img src="./images/logo.png" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon outline-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#categories-section"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#academics">Academics</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#professionals"
+                    >Professionals</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#resources">Research</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="container">
+        <h1 class="display-4 fw-bold">A Digital Library for Every Learner</h1>
+        <p class="lead mt-3">
+          Access books, study materials, and knowledge from anywhere, anytime.
+        </p>
+        <a href="#categories-section" class="btn btn-primary btn-lg mt-3"
+          >Browse Categories</a
+        >
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3">Welcome to the Online Library</h2>
+        <p class="mx-auto" id="introduction">
+          Discover a growing collection of books, academic materials, research
+          documents, and professional resources designed to support every
+          learner. Whether you're a student, a researcher, or a lifelong
+          learner, our digital library gives you the tools you need to explore
+          knowledge without limits.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="py-5 bg-light" id="featured">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-4">Featured Titles</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://picsum.photos/400/250?education"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Introduction to Biology</h5>
+                <p class="small">
+                  A foundational guide to life sciences and ecosystems.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Biology"
+                  class="btn btn-outline-primary w-100"
+                  target="_blank"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://picsum.photos/400/250?technology"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Basic Programming</h5>
+                <p class="small">
+                  Start your coding journey with simple and clear explanations.
+                </p>
+                <a
+                  href="https://www.w3schools.com/"
+                  class="btn btn-outline-primary w-100"
+                  target="_blank"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://picsum.photos/400/250?science"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Fundamentals of Physics</h5>
+                <p class="small">
+                  Explore motion, forces, and energy through simple concepts.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Fundamentals_of_Physics"
+                  class="btn btn-outline-primary w-100"
+                  target="_blank"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories-section" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Categories</h2>
+
+        <!-- Academics Carousel -->
+        <h3 class="text-center fw-bold mb-4" id="academics">Academics</h3>
+        <div
+          id="academics-carousel"
+          class="carousel slide mb-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?math"
+                      class="card-img-top"
+                      alt="Introduction to Mathematics"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Introduction to Mathematics</h5>
+                      <p class="small">
+                        Explore fundamental concepts in algebra, geometry, and
+                        calculus.
+                      </p>
+                      <a
+                        href="https://www.gutenberg.org/files/41568/41568-pdf.pdf"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?chemistry"
+                      class="card-img-top"
+                      alt="Basic Chemistry"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Basic Chemistry</h5>
+                      <p class="small">
+                        Understanding elements, compounds, and chemical
+                        reactions.
+                      </p>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Chemistry"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?literature"
+                      class="card-img-top"
+                      alt="English Literature"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">English Literature</h5>
+                      <p class="small">
+                        Dive into classics and modern works of literary art.
+                      </p>
+                      <a
+                        href="https://en.wikipedia.org/wiki/English_literature"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?geography"
+                      class="card-img-top"
+                      alt="Geography"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Geography</h5>
+                      <p class="small">
+                        Study the earth, its climates, and human societies.
+                      </p>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Geography"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#academics-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#academics-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Professionals Carousel -->
+        <h3 class="text-center fw-bold mb-4" id="professionals">
+          Professionals
+        </h3>
+        <div
+          id="professionals-carousel"
+          class="carousel slide mb-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?business"
+                      class="card-img-top"
+                      alt="Business Management"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Business Management</h5>
+                      <p class="small">
+                        Leadership, strategy, and operational skills for the
+                        workplace.
+                      </p>
+                      <a
+                        href="https://www.coursera.org/specializations/strategic-leadership"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?marketing"
+                      class="card-img-top"
+                      alt="Digital Marketing"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Digital Marketing</h5>
+                      <p class="small">
+                        Master online promotion, SEO, and social media
+                        strategies.
+                      </p>
+                      <a
+                        href="https://www.coursera.org/courses?query=digital%20marketing"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?finance"
+                      class="card-img-top"
+                      alt="Financial Planning"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Financial Planning</h5>
+                      <p class="small">
+                        Budgeting, investing, and wealth management essentials.
+                      </p>
+                      <a
+                        href="https://www.investopedia.com/terms/f/financial_plan.asp"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?project"
+                      class="card-img-top"
+                      alt="Project Management"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Project Management</h5>
+                      <p class="small">
+                        Tools and techniques for successful project execution.
+                      </p>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Project_management"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#professionals-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#professionals-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Research Carousel -->
+        <h3 class="text-center fw-bold mb-4" id="resources">Research</h3>
+        <div
+          id="research-carousel"
+          class="carousel slide mb-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?research1"
+                      class="card-img-top"
+                      alt="Research Methodology"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Research Methodology</h5>
+                      <p class="small">
+                        Fundamentals of conducting and analyzing research.
+                      </p>
+                      <a
+                        href="https://paperpal.com/blog/academic-writing-guides/what-is-research-methodology"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?journal"
+                      class="card-img-top"
+                      alt="Scientific Journals"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Scientific Journals</h5>
+                      <p class="small">
+                        Latest publications in various scientific fields.
+                      </p>
+                      <a
+                        href="https://www.soci.org/publications"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?case"
+                      class="card-img-top"
+                      alt="Case Studies"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Case Studies</h5>
+                      <p class="small">
+                        In-depth analysis of real-world scenarios.
+                      </p>
+                      <a
+                        href="https://ggu.libguides.com/c.php?g=106865&p=7590290"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://picsum.photos/400/250?thesis"
+                      class="card-img-top"
+                      alt="Thesis Papers"
+                    />
+                    <div class="card-body">
+                      <h5 class="fw-bold">Thesis Papers</h5>
+                      <p class="small">
+                        Advanced research dissertations and theses.
+                      </p>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Thesis"
+                        class="btn btn-outline-primary w-100"
+                        target="_blank"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#research-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#research-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">About Our Library</h2>
+
+        <p class="text-center mx-auto mb-5">
+          Our Online Library was built to provide every learner with access to
+          free, organized, and high-quality learning resources. We aim to
+          support students, researchers, and lifelong learners by offering easy
+          access to digital books, study materials, and educational content.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-4 border shadow-sm rounded h-100">
+              <h4 class="fw-bold" id="mission">Our Mission</h4>
+              <p>
+                To empower learners by providing free, accessible, and
+                high-quality digital resources that support education, research,
+                and lifelong learning.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-4 border shadow-sm rounded h-100">
+              <h4 class="fw-bold">Our Vision</h4>
+              <p>
+                To create a world where knowledge is open, learning is
+                limitless, and every individual has the tools they need to
+                succeed.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="text-center mt-5" id="contact">
+          <h3 class="fw-bold mb-4">Contact Us</h3>
+          <p class="mb-4">
+            Have questions or suggestions? We'd love to hear from you.
+          </p>
+          <div class="contact-form mx-auto">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-center">
+      <p class="mb-0">© 2025 Online Library. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+/* CSS RESET */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Set font family for better typography */
+  font-family: Arial, sans-serif;
+  /* 5. Add accessible line-height */
+  line-height: 1.5;
+  /* 6. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 7. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 8. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 9. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 10. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  11. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* CSS RESET END */
+
+/* Navbar Section */
+.navbar {
+  top: 10px;
+  left: 50px;
+  right: 50px;
+  color: white;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  z-index: 2;
+  position: fixed !important;
+}
+.navbar-nav {
+  justify-content: center;
+}
+.navbar-nav .nav-link {
+  color: #2c3e50 !important;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #ddd !important;
+}
+.navbar-brand,
+.navbar-brand:hover {
+  color: white !important;
+}
+.dropdown-item {
+  color: #2c3e50 !important;
+  transition: color 0.3s ease;
+}
+.dropdown-item:hover {
+  color: #ddd !important;
+}
+.btn-outline-primary {
+  color: white;
+  border-color: white;
+}
+.btn-outline-primary:hover {
+  background-color: white;
+  color: #2c3e50;
+}
+#logo {
+  height: 50px;
+  width: 130px;
+  margin-left: 30px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232c3e50' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Homepage Section */
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://picsum.photos/1920/1080?library") center/cover no-repeat;
+  height: 70vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#introduction,
+#about .mx-auto {
+  max-width: 750px;
+}
+
+.contact-form {
+  max-width: 600px;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* About */
+#about {
+  padding-top: 6rem !important;
+}
+
+/* Footer */
+footer {
+  background: #1f1f1f;
+  color: #bbb;
+  padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    position: relative !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+  }
+
+  #home {
+    height: 50vh;
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home .lead {
+    font-size: 1.1rem;
+  }
+
+  #home .btn {
+    font-size: 0.9rem;
+  }
+
+  #introduction,
+  #about .mx-auto {
+    max-width: 90%;
+  }
+
+  .contact-form {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  #logo {
+    height: 40px;
+    width: 100px;
+    margin-left: 20px;
+  }
+
+  #home {
+    height: 40vh;
+  }
+}
