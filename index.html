@@ -589,26 +589,37 @@
             Have questions or suggestions? We'd love to hear from you.
           </p>
           <div class="contact-form mx-auto">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="707d6dce-b258-44f6-9b05-30d660f61d7e"
+              />
               <div class="mb-3">
                 <input
+                  name="name"
                   type="text"
                   class="form-control"
                   placeholder="Your Name"
+                  required
                 />
               </div>
               <div class="mb-3">
                 <input
+                  name="email"
                   type="email"
                   class="form-control"
                   placeholder="Your Email"
+                  required
                 />
               </div>
               <div class="mb-3">
                 <textarea
+                  name="message"
                   class="form-control"
                   rows="4"
                   placeholder="Your Message"
+                  required
                 ></textarea>
               </div>
               <button class="btn btn-primary w-100">Send Message</button>
