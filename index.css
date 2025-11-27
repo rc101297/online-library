@@ -160,6 +160,23 @@ h6 {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
+/* Categories Section */
+#categories-section {
+  padding-top: 6rem !important;
+}
+
+#academics {
+  padding-top: 6rem !important;
+}
+
+#professionals {
+  padding-top: 6rem !important;
+}
+
+#resources {
+  padding-top: 6rem !important;
+}
+
 /* About */
 #about {
   padding-top: 6rem !important;
